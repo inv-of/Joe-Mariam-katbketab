@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joe&Mariam katbketab invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.section{
+    width:100%;
+    height:100vh;
+}
+
+.section img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* أنيميشن الظهور */
+.fade-section{
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s ease;
+}
+
+.fade-section.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Cormorant+Garamond:wght@300;400;500&display=swap');
+
+/* السكشن الخارجي */
+
+/* السكشن الثاني */
+.invitation-section{
+    width: 100%;
+    min-height: 100vh;
+
+    background: url("section2.png") center center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 20px;
+    position: relative;
+}
+
+/* الكارت */
+.invitation-section .card{
+    max-width: 700px;
+    width: 100%;
+}
+
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.invite-section{
+
+padding:60px 25px 70px;
+
+border-radius:55px 55px 0 0;
+
+}
+
+.arabic{
+
+font-size:22px;
+
+}
+
+.english{
+
+font-size:20px;
+
+}
+
+.groom,
+.bride{
+
+font-size:44px;
+
+}
+
+.names{
+
+gap:35px;
+
+}
+
+.monogram{
+
+width:75px;
+height:75px;
+
+font-size:30px;
+
+}
+
+}
+
+
+.countdown-section{
+    width:100%;
+    min-height:95vh;
+
+    background:#6e6648;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:70px 6%;
+    box-sizing:border-box;
+}
+
+.count-content{
+    width:100%;
+    text-align:center;
+}
+
+.small-title{
+    font-family:'Great Vibes', cursive;
+    font-size:48px;
+    color:#d7c4b0;
+
+    margin-bottom:30px;
+}
+
+.big-title{
+    font-family:'Cinzel Decorative', serif;
+    font-size:52px;
+    color:#d7c4b0;
+
+    margin-bottom:80px;
+    font-weight:400;
+}
+
+#countdown{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+
+    flex-wrap:wrap;
+}
+
+.time-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.time-box span{
+    font-family:'Cinzel Decorative', serif;
+    font-size:48px;
+    color:#d7c4b0;
+    line-height:1;
+}
+
+.time-box small{
+    margin-top:18px;
+
+    font-family:'Cinzel Decorative', serif;
+    font-size:28px;
+
+    color:#d7c4b0;
+}
+
+/* Divider */
+
+.divider{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+.divider::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:1px;
+    background:rgba(215,196,176,.45);
+}
+
+.ornament{
+    position:relative;
+    display:flex;
+    gap:0;
+    background:#6e6648;
+    padding:0 20px;
+}
+
+.ornament span{
+    width:12px;
+    height:12px;
+
+    border:2px solid rgba(215,196,176,.6);
+
+    transform:rotate(45deg);
+    margin-left:-2px;
+}
+
+.bottom{
+    margin-top:60px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .big-title{
+        font-size:24px;
+    }
+
+    .small-title{
+        font: size 40px;
+    }
+
+    #countdown{
+        gap:35px;
+    }
+
+    .time-box span{
+        font-size:24px;
+    }
+
+    .time-box small{
+        font-size:18px;
+    }
+
+    .countdown-section{
+        min-height:80vh;
+        padding:50px 25px;
+    }
+}
+
+.venue-section{
+    width:100%;
+    padding:90px 20px 60px;
+
+    background:#d8c9b4;
+
+    text-align:center;
+}
+
+.venue-title{
+    font-family:'Great Vibes', cursive;
+    font-size:64px;
+
+    color:#2a080f;
+
+    font-weight:400;
+
+    margin-bottom:70px;
+}
+
+.venue-image{
+    width:100%;
+    max-width:700px;
+
+    margin:auto;
+}
+
+.venue-image img{
+    width:100%;
+    display:block;
+}
+
+.venue-text{
+    margin-top:60px;
+
+    font-family:'Cinzel Decorative', serif;
+
+    font-size:30px;
+
+    color:#2a080f;
+}
+
+.venue-date{
+    margin-top:12px;
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:28px;
+
+    color:#2a080f;
+}
+
+.map-btn{
+    display:inline-flex;
+
+    justify-content:center;
+    align-items:center;
+
+    width:260px;
+    height:90px;
+
+    margin-top:70px;
+
+    border:2px solid #2a080f;
+
+    text-decoration:none;
+
+    color:#6e6648;
+
+    font-family:'Cinzel Decorative', serif;
+
+    font-size:28px;
+
+    transition:.35s;
+    border-radius:25%;
+}
+
+.map-btn:hover{
+    background:#6e6648;
+
+    color:#d8c9b4;
+
+    border-color:#2a080f;
+}
+
+.divider{
+    width:100%;
+
+    margin-top:90px;
+
+    display:flex;
+
+    justify-content:center;
+
+    position:relative;
+}
+
+.divider::before{
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+    height:1px;
+
+    background:rgba(42,8,15,.35);
+
+    top:50%;
+}
+
+.ornament{
+    position:relative;
+
+    display:flex;
+
+    background:#d8c9b4;
+
+    padding:0 18px;
+}
+
+.ornament span{
+    width:12px;
+    height:12px;
+
+    border:2px solid rgba(42,8,15,.55);
+
+    transform:rotate(45deg);
+
+    margin-left:-2px;
+}
+
+@media(max-width:768px){
+
+    .venue-title{
+        font-size:40px;
+    }
+
+    .venue-text{
+        font-size:16px;
+    }
+
+    .venue-date{
+        font-size:22px;
+    }
+
+    .map-btn{
+        width:220px;
+        height:75px;
+
+        font-size:24px;
+    }
+
+}
+
+.footer{
+    background:#6e6648;
+
+    color:#d8c9b4;
+
+    padding:90px 20px 70px;
+
+    text-align:center;
+
+    overflow:hidden;
+}
+
+.footer-title{
+    font-family:'Gulzar',serif;
+
+    font-size:72px;
+
+    font-weight:400;
+
+    margin:0;
+
+    color:#d8c9b4;
+}
+
+.footer-date{
+    margin:28px 0 75px;
+
+    font-size:18px;
+
+    letter-spacing:12px;
+
+    opacity:.8;
+
+    font-family:'Gulzar',serif;
+
+    color:#d8c9b4;
+}
+
+.footer-credit{
+    font-size:15px;
+
+    letter-spacing:10px;
+
+    text-transform:uppercase;
+
+    color:#d8c9b4;
+
+    font-family:'Gulzar',serif;
+}
+
+.footer-credit span{
+    font-family:'Gulzar',serif;
+
+    text-transform:none;
+
+    letter-spacing:3px;
+
+    font-size:28px;
+
+    margin-right:15px;
+
+    color:#d8c9b4;
+}
+
+.footer-instagram{
+    display:inline-block;
+
+    margin-top:40px;
+
+    color:#d8c9b4;
+
+    font-size:36px;
+
+    transition:.35s;
+}
+
+.footer-instagram:hover{
+    color:#ffffff;
+
+    transform:translateY(-4px);
+}
+
+/* Animation */
+
+.reveal{
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:1s;
+}
+
+.reveal.active{
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+    .footer{
+        padding:70px 20px 50px;
+    }
+
+    .footer-title{
+        font-size:46px;
+    }
+
+    .footer-date{
+        font-size:14px;
+
+        letter-spacing:6px;
+
+        margin:20px 0 55px;
+    }
+
+    .footer-credit{
+        font-size:12px;
+
+        letter-spacing:5px;
+    }
+
+    .footer-credit span{
+        display:block;
+
+        margin-top:12px;
+
+        margin-right:0;
+
+        font-size:22px;
+    }
+
+    .footer-instagram{
+        font-size:30px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- السكشن الأول -->
+<section class="section">
+    <img src="section1.png" alt="">
+</section>
+
+<!-- السكشن الثاني -->
+<section class="invitation-section fade-section">
+
+</section>
+
+<!-- السكشن الأخير -->
+<section class="countdown-section ">
+
+    <div class="divider">
+        <span class="ornament">
+            <span></span><span></span><span></span>
+        </span>
+    </div>
+
+    <div class="count-content">
+<br>
+<br>
+        <p class="small-title">
+            Countdown
+        </p>
+
+
+        <h2 class="big-title">
+Until We Celebrate Forever
+        </h2>
+
+        <div id="countdown">
+
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+            </div>
+            
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>Hours</small>
+            </div>
+
+            <div class="time-box">
+                <span id="days">00</span>
+                <small>Days</small>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="divider bottom">
+        <span class="ornament">
+            <span></span><span></span><span></span>
+        </span>
+    </div>
+    <br>
+<br><br>
+<br>
+
+</section>
+
+<section class="venue-section">
+
+    
+    <h2 class="venue-title">
+        Venue
+    </h2>
+
+    <div class="venue-image">
+
+        <img src="venue.png" alt="Venue">
+
+    </div>
+
+    <p class="venue-text">
+        We would be delighted to celebrate this unforgettable evening with you.
+    </p>
+
+    <p class="venue-text">
+The Tree House Oraby<br>
+Obour City, Cairo, Egypt  </p> 
+    <a
+        href="https://maps.app.goo.gl/cwRW3qqpJie9oaTu7"
+        target="_blank"
+        class="map-btn">
+
+        Google Maps
+
+    </a>
+ 
+    <div class="divider">
+
+        <span class="ornament">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<footer class="footer">
+
+
+    <p class="footer-date">
+    28 • 08 • 2026
+</p>
+    
+    <div class="footer-credit ">
+        CREATED BY
+        <span>HoneyVows</span>
+    </div>
+
+    <a href="https://www.instagram.com/honey_vows?igsh=MXJkcWk0YzFiZG1qNA%3D%3D&utm_source=qr"
+       target="_blank"
+       class="footer-instagram ">
+
+        <i class="fa-brands fa-instagram"></i>
+
+    </a>
+
+</footer>
+
+
+<script>
+const secondSection = document.querySelector('.fade-section');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+},{
+    threshold:0.2
+});
+
+observer.observe(secondSection);
+
+
+</script>
+<script>
+    const weddingDate = new Date("2026-08-28T18:00:00").getTime();
+
+const timer = setInterval(() => {
+
+    const now = new Date().getTime();
+
+    const distance = weddingDate - now;
+
+    if(distance <= 0){
+
+        clearInterval(timer);
+
+        document.getElementById("countdown").innerHTML =
+        "<h2 style='font-family:Aref Ruqaa;color:#F4E8D4;'>تم بحمد الله ❤</h2>";
+
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+
+},1000);
+</script>
+
+
+</body>
+</html>
